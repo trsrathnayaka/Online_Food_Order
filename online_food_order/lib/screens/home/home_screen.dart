@@ -26,6 +26,29 @@ class _HomeScreenState extends State<HomeScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      drawer: Drawer(child: ListView(
+        // ignore: prefer_const_literals_to_create_immutables
+        children: [
+DrawerHeader(child: Center(
+  child:   Text(
+  
+     "Foodie",
+  
+            style: TextStyle(
+  
+                fontSize: 25.0,
+  
+                fontWeight: FontWeight.w900,
+  
+                color: kSecondaryColor),
+  
+  ),
+),),
+
+
+
+        MobMenu(),
+      ],)),
       body: SingleChildScrollView(
         child: Column(
           // ignore: prefer_const_literals_to_create_immutables

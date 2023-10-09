@@ -1,3 +1,4 @@
+import 'package:auto_size_text/auto_size_text.dart';
 import 'package:flutter/material.dart';
 
 import '../../../constants.dart';
@@ -17,15 +18,17 @@ class BannerSection extends StatelessWidget {
             // ignore: prefer_const_literals_to_create_immutables
             children: [
               // ignore: prefer_const_constructors
-              Text(
+              AutoSizeText(
                 "Eat today",
+                maxLines: 1,
                 style: TextStyle(fontSize: 56, fontWeight: FontWeight.bold),
               ),
               SizedBox(
                 height: 10,
               ),
-              Text(
+              AutoSizeText(
                 "Live another day",
+                maxLines: 1,
                 style: TextStyle(
                   fontSize: 56,
                 ),
@@ -33,7 +36,7 @@ class BannerSection extends StatelessWidget {
               SizedBox(
                 height: 10,
               ),
-              Text(
+              AutoSizeText(
                 "how to make complete responsive food / restaurant website design flutter",
                 textAlign: TextAlign.center,
                 style: TextStyle(

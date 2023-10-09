@@ -1,3 +1,5 @@
+// ignore_for_file: prefer_const_literals_to_create_immutables
+
 import 'package:flutter/material.dart';
 
 import '../../../constants.dart';
@@ -23,6 +25,7 @@ class HeaderContainer extends StatelessWidget {
             child: Column(
               children: [
                 Header(),
+                // ignore: prefer_const_constructors
                 SizedBox(
                   height: 50,
                 ),
