@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:online_food_order/model.dart/responsive.dart';
 
 import '../../../constants.dart';
 import 'menu.dart';
@@ -12,6 +13,7 @@ class Header extends StatelessWidget {
   Widget build(BuildContext context) {
     return Row(
       children: [
+        IconButton(onPressed: () {}, icon: Icon(Icons.menu)),
         Text(
           "FoodZone",
           style: TextStyle(
@@ -21,7 +23,7 @@ class Header extends StatelessWidget {
         ),
         Spacer(),
         //menu
-        HeaderWebMenu(),
+        if (Responsive.isDesktop(context)) HeaderWebMenu(),
         Spacer(),
         Expanded(
           child: Container(
