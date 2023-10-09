@@ -1,6 +1,7 @@
 // ignore_for_file: prefer_const_literals_to_create_immutables
 
 import 'package:flutter/material.dart';
+import 'package:online_food_order/model.dart/responsive.dart';
 
 import '../../../constants.dart';
 import 'banner_section.dart';
@@ -27,9 +28,10 @@ class HeaderContainer extends StatelessWidget {
                 Header(),
                 // ignore: prefer_const_constructors
                 SizedBox(
-                  height: 50,
+                  height: 20,
                 ),
-                BannerSection()
+                Responsive.isDesktop(context)?
+                BannerSection():MobBanner(),
               ],
             ),
           ),
