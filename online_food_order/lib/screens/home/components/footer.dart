@@ -1,13 +1,17 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
+import 'package:online_food_order/model.dart/responsive.dart';
+
 
 import '../../../constants.dart';
 import 'menu.dart';
 
 class Footer extends StatelessWidget {
-  const Footer({
-    super.key,
-  });
+  var kSecondaryColor;
+
+  Footer({
+    Key? key,
+  }) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -26,7 +30,7 @@ class Footer extends StatelessWidget {
                   child: Column(
                     children: [
                       Text(
-                        "FoodZone",
+                        "Foodie",
                         style: TextStyle(
                             fontSize: 25.0,
                             fontWeight: FontWeight.w900,
@@ -54,13 +58,18 @@ class Footer extends StatelessWidget {
                             icon: "assets/icons/twitter.svg",
                           ),
                         ],
-                      ),
+                      )
                     ],
                   ),
                 ),
+                if (Responsive.isDesktop(context))
+                  Expanded(flex: 3, child: HeaderWebMenu()),
               ],
             ),
-            HeaderWebMenu(),
+            SizedBox(
+              height: 20,
+            ),
+            if (!Responsive.isDesktop(context)) MobFooterMenu(),
           ],
         ),
       ),
@@ -70,9 +79,9 @@ class Footer extends StatelessWidget {
 
 class SocialIcon extends StatelessWidget {
   const SocialIcon({
-    super.key,
+    Key? key,
     required this.icon,
-  });
+  }) : super(key: key);
   final String icon;
   @override
   Widget build(BuildContext context) {
