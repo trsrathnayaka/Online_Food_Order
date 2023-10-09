@@ -90,7 +90,7 @@ class AboutSection extends StatelessWidget {
           height: 10,
         ),
         AutoSizeText(
-          "how to make complete responsive food / restaurant website design flutter",
+          "You can eat at expensive restaurants with affordable price",
           textAlign: TextAlign.center,
           style: TextStyle(
             color: Colors.black54,

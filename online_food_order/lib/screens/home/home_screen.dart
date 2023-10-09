@@ -32,7 +32,7 @@ class _HomeScreenState extends State<HomeScreen> {
 DrawerHeader(child: Center(
   child:   Text(
   
-     "Foodie",
+     "Dine Delish",
   
             style: TextStyle(
   

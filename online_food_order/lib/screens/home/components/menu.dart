@@ -13,14 +13,14 @@ class HeaderWebMenu extends StatelessWidget {
       children: [
         HeaderMenu(
           press: () {},
-          title: "Menu",
+          title: "Home",
         ),
         SizedBox(
           width: kPadding,
         ),
         HeaderMenu(
           press: () {},
-          title: "For Riders",
+          title: "Menu",
         ),
         SizedBox(
           width: kPadding,
@@ -59,14 +59,14 @@ class MobFooterMenu extends StatelessWidget {
       children: [
         HeaderMenu(
           press: () {},
-          title: "Menu",
+          title: "Home",
         ),
         SizedBox(
           width: kPadding,
         ),
         HeaderMenu(
           press: () {},
-          title: "For Riders",
+          title: "Menu",
         ),
         SizedBox(
           width: kPadding,
@@ -85,10 +85,7 @@ class MobFooterMenu extends StatelessWidget {
         SizedBox(
           width: kPadding,
         ),
-        HeaderMenu(
-          press: () {},
-          title: "Restaurants",
-        ),
+       
       ],
     );
   }
@@ -133,14 +130,14 @@ class _MobMenuState extends State<MobMenu> {
         children: [
           HeaderMenu(
             press: () {},
-            title: "Menu",
+            title: "Home",
           ),
           SizedBox(
             height: kPadding,
           ),
           HeaderMenu(
             press: () {},
-            title: "For Riders",
+            title: "Menu",
           ),
           SizedBox(
             height: kPadding,

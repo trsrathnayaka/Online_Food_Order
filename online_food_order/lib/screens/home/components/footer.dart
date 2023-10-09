@@ -30,7 +30,7 @@ class Footer extends StatelessWidget {
                   child: Column(
                     children: [
                       Text(
-                        "Foodie",
+                        "Dine Delish",
                         style: TextStyle(
                             fontSize: 25.0,
                             fontWeight: FontWeight.w900,

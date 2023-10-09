@@ -25,7 +25,7 @@ class Header extends StatelessWidget {
                   },
                   icon: Icon(Icons.menu))),
         Text(
-          "Foodie",
+          "Dine Delish",
           style: TextStyle(
               fontSize: 25.0,
               fontWeight: FontWeight.w900,
