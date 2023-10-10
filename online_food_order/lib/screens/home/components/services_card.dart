@@ -23,7 +23,7 @@ class ServicesCard extends StatelessWidget {
         ),
         Services(
           image: "assets/images/offer.jpg",
-          title: "Best Offer in Town",
+          title: "Best Offer in Uni Canteen",
         ),
       ],
     );

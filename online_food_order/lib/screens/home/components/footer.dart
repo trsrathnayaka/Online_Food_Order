@@ -7,6 +7,7 @@ import '../../../constants.dart';
 import 'menu.dart';
 
 class Footer extends StatelessWidget {
+  // ignore: prefer_typing_uninitialized_variables
   var kSecondaryColor;
 
   Footer({
